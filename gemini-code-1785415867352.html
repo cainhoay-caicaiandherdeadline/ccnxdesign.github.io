@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Giá & Commission 💸</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ptGreen: '#C8E6C9',
+                        ptOrange: '#FFE0B2',
+                        ptYellow: '#FFF9C4',
+                        ptBrown: '#5D4037',
+                        ptCream: '#FFFDF9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #FFFDF9; color: #5D4037; font-family: 'Segoe UI', Tahoma, sans-serif; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-[#FFFDF9]/90 backdrop-blur-md border-b border-orange-100 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wide flex items-center gap-2">
+                <span class="bg-ptYellow px-3 py-1 rounded-full text-base">✨</span>
+                <span>My Portfolio</span>
+            </a>
+            <div class="flex gap-4 font-semibold text-sm">
+                <a href="index.html" class="px-4 py-2 rounded-full hover:bg-ptGreen transition">Portfolio</a>
+                <a href="pricing.html" class="px-4 py-2 rounded-full bg-ptOrange text-ptBrown shadow-sm">Bảng Giá (Commission)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="text-center my-10 px-4">
+        <h1 class="text-3xl font-extrabold">Bảng Giá Commission 💌</h1>
+        <p class="text-stone-500 text-sm mt-2">Cảm ơn bạn đã quan tâm đến dịch vụ thiết kế của mình!</p>
+    </div>
+
+    <main class="max-w-5xl mx-auto px-4 mb-20 space-y-12">
+        
+        <!-- PRICING CARDS -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- GÓI 1 -->
+            <div class="bg-white border-2 border-stone-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:border-ptGreen transition">
+                <div>
+                    <span class="bg-ptGreen text-xs px-3 py-1 rounded-full font-bold">Gói Cơ Bản</span>
+                    <h3 class="text-xl font-bold mt-4">Avatar / Chibi</h3>
+                    <div class="text-2xl font-black my-3 text-emerald-700">150.000đ <span class="text-xs font-normal text-stone-400">/ hình</span></div>
+                    <ul class="text-xs space-y-2 text-stone-600 border-t pt-4">
+                        <li>✔️ Size: 2000x2000px (PNG)</li>
+                        <li>✔️ Sửa Demo 2 lần miễn phí</li>
+                        <li>✔️ Thời gian: 2 - 3 ngày</li>
+                    </ul>
+                </div>
+                <button class="w-full bg-ptGreen mt-6 py-2 rounded-xl font-bold hover:opacity-90">Đặt Gói Này</button>
+            </div>
+
+            <!-- GÓI 2 (HOT) -->
+            <div class="bg-white border-2 border-ptOrange rounded-3xl p-6 flex flex-col justify-between shadow-md relative">
+                <span class="absolute -top-3 right-6 bg-ptOrange text-xs px-3 py-1 rounded-full font-bold">Yêu thích 🔥</span>
+                <div>
+                    <span class="bg-ptOrange text-xs px-3 py-1 rounded-full font-bold">Gói Phổ Thông</span>
+                    <h3 class="text-xl font-bold mt-4">Banner / Header MXH</h3>
+                    <div class="text-2xl font-black my-3 text-orange-600">350.000đ <span class="text-xs font-normal text-stone-400">/ thiết kế</span></div>
+                    <ul class="text-xs space-y-2 text-stone-600 border-t pt-4">
+                        <li>✔️ Xuất file PDF/PNG in ấn</li>
+                        <li>✔️ Tặng kèm bản Preview</li>
+                        <li>✔️ Sửa Demo 3 lần miễn phí</li>
+                    </ul>
+                </div>
+                <button class="w-full bg-ptOrange mt-6 py-2 rounded-xl font-bold hover:opacity-90">Đặt Gói Này</button>
+            </div>
+
+            <!-- GÓI 3 -->
+            <div class="bg-white border-2 border-stone-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:border-ptYellow transition">
+                <div>
+                    <span class="bg-ptYellow text-xs px-3 py-1 rounded-full font-bold">Gói Thương Mại</span>
+                    <h3 class="text-xl font-bold mt-4">Full UI / Layout</h3>
+                    <div class="text-2xl font-black my-3 text-amber-700">700.000đ+ <span class="text-xs font-normal text-stone-400">/ dự án</span></div>
+                    <ul class="text-xs space-y-2 text-stone-600 border-t pt-4">
+                        <li>✔️ Xuất đầy đủ file PSD/Figma</li>
+                        <li>✔️ Quyền thương mại toàn bộ</li>
+                        <li>✔️ Hỗ trợ cập nhật sau bàn giao</li>
+                    </ul>
+                </div>
+                <button class="w-full bg-ptYellow mt-6 py-2 rounded-xl font-bold hover:opacity-90">Đặt Gói Này</button>
+            </div>
+
+        </div>
+
+        <!-- QUY TRÌNH & ĐIỀU KHOẢN (ToS) -->
+        <div class="bg-white rounded-3xl p-8 border border-orange-100 shadow-sm space-y-6">
+            <h2 class="text-lg font-bold flex items-center gap-2">
+                <span>📋</span> Quy Trình Làm Việc & Điều Khoản
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs leading-relaxed text-stone-600">
+                <div class="bg-ptCream p-4 rounded-2xl">
+                    <h4 class="font-bold text-ptBrown text-sm mb-2">🔄 Quy trình nhận Job:</h4>
+                    <ol class="list-decimal list-inside space-y-1">
+                        <li>Trao đổi ý tưởng & chốt yêu cầu qua tin nhắn.</li>
+                        <li>Nhận 50% cọc → Tiến hành vẽ/thiết kế Demo.</li>
+                        <li>Gửi Demo cho khách duyệt & chỉnh sửa.</li>
+                        <li>Thanh toán phần còn lại & Nhận link tải file sạch (BaiduPan/Drive).</li>
+                    </ol>
+                </div>
+                <div class="bg-ptCream p-4 rounded-2xl">
+                    <h4 class="font-bold text-ptBrown text-sm mb-2">⚠️ Lưu ý quan trọng:</h4>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Hỗ trợ thanh toán qua Chuyển khoản Ví điện tử / Alipay.</li>
+                        <li>Nếu hủy đơn giữa chừng sau khi đã xong demo, tiền cọc sẽ không hoàn lại.</li>
+                        <li>File gửi xưởng in mặc định là định dạng PDF tiêu chuẩn.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-stone-100 border-t border-stone-200 py-6 text-center text-xs text-stone-500 mt-auto">
+        © 2026 Portfolio. Crafted with 🤎 & Pastel Colors.
+    </footer>
+
+</body>
+</html>
