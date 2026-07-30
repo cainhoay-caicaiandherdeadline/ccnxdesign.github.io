@@ -1,4 +1,0 @@
-my-portfolio/
-├── index.html        (Trang chính: Portfolio & Showcase)
-├── pricing.html      (Trang riêng: Bảng giá & Điều khoản)
-└── assets/           (Thư mục chứa ảnh của bạn)
